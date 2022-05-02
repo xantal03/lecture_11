@@ -1,6 +1,13 @@
+def recursive_nth_fibo(number):
+    if number <= 1:
+        return number
+    else:
+        return recursive_nth_fibo(number - 1) + recursive_nth_fibo(number - 2)
+
 
 def main():
-    pass
+    number = input("Zadaj poradie prvku: ")
+    print(recursive_nth_fibo(int(number)))
 
 
 if __name__ == "__main__":
